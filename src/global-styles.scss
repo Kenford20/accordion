@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  #root {
+    padding: 100px 0;
+    //height: 100vh;
+    justify-content: center;
+    display: flex;
+    //align-items: center;
+    font-family: Tahoma;
+  }
+  
+  #accordion {
+    width: 400px;
+    min-height: 600px;
+    background: darkgreen;
+    border: 5px solid darkgreen;
+    
+    .deal-header-containers {
+      position: relative;
+      cursor: pointer;
+      background: white;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid rgb(150, 150, 150);
+    }
+    
+    .deals-container {
+      max-height: 2000px;    
+      transition: max-height ease-in-out 0.3s, opacity ease-in-out 0.2s;
+    
+      .deal {
+          background: rgb(150, 255, 150);
+          padding: 15px;
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid rgb(150, 150, 150);
+        }
+    }
+    
+    .add-deal {
+      padding: 15px;
+      background: rgb(150, 255, 150);
+      position: relative;
+      
+      span {
+        color: blue;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+    
+    #grand-total {
+      display: flex;
+      background: white;
+      padding: 15px;
+      justify-content: flex-end;
+      
+      span {
+        color: green;
+      }
+    }
+  }
+  
+  

@@ -10,7 +10,7 @@ export default class Accordion extends React.Component {
           "Local": [10, 20, 30],
           "Getaway": [40, 50, 60],
           "Goods": [70, 80, 90],
-          "Groupon": [150]
+          "Groupon": [150, 10]
         },
         grandTotal: 0
       }
@@ -53,7 +53,7 @@ export default class Accordion extends React.Component {
             ))
           }
           <div id="grand-total">
-            <div>Grand Total: <span>${grandTotal}</span></div>
+            <div data-testid="grand-total">Grand Total: <span>${grandTotal}</span></div>
           </div>
         </div>
       );

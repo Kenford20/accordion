@@ -6,8 +6,10 @@ exports[`renders the deal header 1`] = `
     class="deal-header-containers"
     data-testid="deal-header"
   >
-    <span>
-      Foo
+    <span
+      data-testid="deals-type"
+    >
+      Groupon
        Deals
     </span>
     <span

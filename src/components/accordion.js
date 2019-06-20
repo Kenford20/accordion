@@ -31,7 +31,7 @@ export const Accordion = () => {
   }
     
   return (
-    <div id="accordion">
+    <div id="accordion" data-testid="accordion">
       {
         Object.keys(deals).map((type, index) => (
           <DealHeader 

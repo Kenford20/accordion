@@ -30,7 +30,7 @@ export const DealHeader = ({ prices, header, addDeal }) => {
   return (
     <React.Fragment>
       <div className="deal-header-containers" data-testid="deal-header" onClick={(e) => toggleDeals(e)}>
-        <span>{header} Deals</span>
+        <span data-testid="deals-type">{header} Deals</span>
         <span data-testid="deals-total">Total: ${dealsTotal}</span>
       </div>
 

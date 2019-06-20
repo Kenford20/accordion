@@ -1,7 +1,7 @@
 import React from 'react';
-import { DealHeader } from './deal-header';
+import DealHeader from './deal-header';
 
-export class Accordion extends React.Component {
+export default class Accordion extends React.Component {
     constructor(props) {
       super(props);
       

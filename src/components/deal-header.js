@@ -1,7 +1,7 @@
 import React from 'react';
 import { DealsContainer } from './deals-container';
 
-export class DealHeader extends React.Component {
+export default class DealHeader extends React.Component {
     constructor(props) {
       super(props);
       
@@ -61,9 +61,9 @@ export class DealHeader extends React.Component {
       
       return (
         <React.Fragment>
-          <div className="deal-header-containers" onClick={(e) => this.toggleDeals(e)}>
+          <div className="deal-header-containers" data-testid="deal-header" onClick={(e) => this.toggleDeals(e)}>
             <span>{header} Deals</span>
-            <span>Total: ${dealsTotal}</span>
+            <span data-testid="deals-total">Total: ${dealsTotal}</span>
           </div>
   
           <DealsContainer 
